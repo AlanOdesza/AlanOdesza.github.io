@@ -10,7 +10,7 @@
  const resultElement = document.getElementById('result');
  try {
  const content = JBD.Js(path);
- resultElement.innerHTML = "FLAG: " + content;
+ resultElement.innerHTML = content;
  } catch (e) {
  resultElement.innerHTML = "Exploit failed: " + e;
  }
